@@ -1,6 +1,6 @@
 import type { MainTableItem, TableItemId } from './types/MainTable'
 
-class TreeStore<T extends MainTableItem> {
+export class TreeStore<T extends MainTableItem> {
   private items: T[]
 
   constructor(initialItems: T[]) {

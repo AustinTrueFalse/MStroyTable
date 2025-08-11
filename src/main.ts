@@ -4,7 +4,9 @@ import App from './App.vue'
 // AG Grid
 import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community'
 
-ModuleRegistry.registerModules([AllCommunityModule])
+import { TreeDataModule } from "ag-grid-enterprise";
+
+ModuleRegistry.registerModules([AllCommunityModule, TreeDataModule])
 
 
 
