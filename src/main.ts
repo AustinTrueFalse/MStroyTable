@@ -1,4 +1,18 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+// AG Grid
+import { AllCommunityModule, ModuleRegistry } from 'ag-grid-community'
+
+ModuleRegistry.registerModules([AllCommunityModule])
+
+
+
+// AG Grid Vue
+import { AgGridVue } from 'ag-grid-vue3'
+
+
+
+const app = createApp(App)
+app.component('AgGridVue', AgGridVue)
+app.mount('#app')
